@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServiceStyleDocImpl">
+      <implementation-class>by.bsuir.vechorko.ws.ServiceStyleDocImpl</implementation-class>
+    </service>
+    <service name="ServiceStyleRPCImpl">
+      <implementation-class>by.bsuir.vechorko.ws.ServiceStyleRPCImpl</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

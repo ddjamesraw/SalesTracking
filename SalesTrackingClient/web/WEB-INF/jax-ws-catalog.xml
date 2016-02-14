@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SalesTrackingWS-war/ServiceStyleRPC?wsdl" uri="wsdl/localhost_8080/SalesTrackingWS-war/ServiceStyleRPC.wsdl"/>
+    <system systemId="http://bozhko:8080/SalesTrackingWS-war/ServiceStyleDoc?wsdl" uri="wsdl/bozhko_8080/SalesTrackingWS-war/ServiceStyleDoc.wsdl"/>
+    <system systemId="http://bozhko:8080/SalesTrackingWS-war/ServiceStyleDoc?xsd=1" uri="wsdl/bozhko_8080/SalesTrackingWS-war/ServiceStyleDoc.xsd_1.xsd"/>
+    <system systemId="http://ddjameslap:8080/SalesTrackingWS-war/ServiceStyleDoc?wsdl" uri="wsdl/ddjameslap_8080/SalesTrackingWS-war/ServiceStyleDoc.wsdl"/>
+    <system systemId="http://ddjameslap:8080/SalesTrackingWS-war/ServiceStyleDoc?xsd=1" uri="wsdl/ddjameslap_8080/SalesTrackingWS-war/ServiceStyleDoc.xsd_1.xsd"/>
+    <system systemId="http://ddjameslap:8080/SalesTrackingWS-war/ServiceStyleRPC?wsdl" uri="wsdl/ddjameslap_8080/SalesTrackingWS-war/ServiceStyleRPC.wsdl"/>
+</catalog>

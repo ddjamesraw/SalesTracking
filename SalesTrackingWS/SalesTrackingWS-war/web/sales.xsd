@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="category" type="category"/>
+
+  <xs:element name="good" type="good"/>
+
+  <xs:element name="sale" type="sale"/>
+
+  <xs:element name="sales" type="sales"/>
+
+  <xs:element name="shop" type="shop"/>
+
+  <xs:complexType name="sales">
+    <xs:sequence>
+      <xs:element ref="sale" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sale">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="count" type="xs:int"/>
+      <xs:element name="date" type="xs:string"/>
+      <xs:element ref="shop"/>
+      <xs:element ref="good"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="shop">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="good">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="price" type="xs:int"/>
+      <xs:element ref="category"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="category">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

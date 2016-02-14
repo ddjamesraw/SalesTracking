@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServiceStyleRPC" targetNamespace="http://ws.vechorko.bsuir.by/" xmlns:tns="http://ws.vechorko.bsuir.by/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" 
+ >
+    <message name="getAllShops"/>
+    <message name="getAllShopsResponse"/>
+    <message name="getAllCategories"/>
+    <message name="getAllCategoriesResponse"/>
+    <message name="getAllSales"/>
+    <message name="getAllSalesResponse"/>
+    <message name="getAllUsers"/>
+    <message name="getAllUsersResponse"/>
+    <message name="getAllGoods"/>
+    <message name="getAllGoodsResponse"/>
+    <message name="removeUser"/>
+    <message name="removeUserResponse"/>
+    <message name="removeGood"/>
+    <message name="removeGoodResponse"/>
+    <message name="removeCategory"/>
+    <message name="removeCategoryResponse"/>
+    <message name="removeShop"/>
+    <message name="removeShopResponse"/>
+    <message name="removeSale"/>
+    <message name="removeSaleResponse"/>
+    <message name="addNewUser"/>
+    <message name="addNewUserResponse"/>
+    <message name="addNewCategory"/>
+    <message name="addNewCategoryResponse"/>
+    <message name="addNewGood"/>
+    <message name="addNewGoodResponse"/>
+    <message name="addNewShop"/>
+    <message name="addNewShopResponse"/>
+    <message name="editUser"/>
+    <message name="editUserResponse"/>
+    <message name="editShop"/>
+    <message name="editShopResponse"/>
+    <message name="editGood"/>
+    <message name="editGoodResponse"/>
+    <message name="editCategory"/>
+    <message name="editCategoryResponse"/>
+    <message name="addNewSale"/>
+    <message name="addNewSaleResponse"/>
+    <message name="editSale"/>
+    <message name="editSaleResponse"/>
+    <message name="getSalesStatistic"/>
+    <message name="getSalesStatisticResponse"/>
+    <portType name="ServiceStyleRPCImpl">
+        <operation name="getAllShops">
+            <input message="tns:getAllShops"/>
+            <output message="tns:getAllShopsResponse"/>
+        </operation>
+        <operation name="getAllCategories">
+            <input message="tns:getAllCategories"/>
+            <output message="tns:getAllCategoriesResponse"/>
+        </operation>
+        <operation name="getAllSales">
+            <input message="tns:getAllSales"/>
+            <output message="tns:getAllSalesResponse"/>
+        </operation>
+        <operation name="getAllUsers">
+            <input message="tns:getAllUsers"/>
+            <output message="tns:getAllUsersResponse"/>
+        </operation>
+        <operation name="getAllGoods">
+            <input message="tns:getAllGoods"/>
+            <output message="tns:getAllGoodsResponse"/>
+        </operation>
+        <operation name="removeUser">
+            <input message="tns:removeUser"/>
+            <output message="tns:removeUserResponse"/>
+        </operation>
+        <operation name="removeGood">
+            <input message="tns:removeGood"/>
+            <output message="tns:removeGoodResponse"/>
+        </operation>
+        <operation name="removeCategory">
+            <input message="tns:removeCategory"/>
+            <output message="tns:removeCategoryResponse"/>
+        </operation>
+        <operation name="removeShop">
+            <input message="tns:removeShop"/>
+            <output message="tns:removeShopResponse"/>
+        </operation>
+        <operation name="removeSale">
+            <input message="tns:removeSale"/>
+            <output message="tns:removeSaleResponse"/>
+        </operation>
+        <operation name="addNewUser">
+            <input message="tns:addNewUser"/>
+            <output message="tns:addNewUserResponse"/>
+        </operation>
+        <operation name="addNewCategory">
+            <input message="tns:addNewCategory"/>
+            <output message="tns:addNewCategoryResponse"/>
+        </operation>
+        <operation name="addNewGood">
+            <input message="tns:addNewGood"/>
+            <output message="tns:addNewGoodResponse"/>
+        </operation>
+        <operation name="addNewShop">
+            <input message="tns:addNewShop"/>
+            <output message="tns:addNewShopResponse"/>
+        </operation>
+        <operation name="editUser">
+            <input message="tns:editUser"/>
+            <output message="tns:editUserResponse"/>
+        </operation>
+        <operation name="editShop">
+            <input message="tns:editShop"/>
+            <output message="tns:editShopResponse"/>
+        </operation>
+        <operation name="editGood">
+            <input message="tns:editGood"/>
+            <output message="tns:editGoodResponse"/>
+        </operation>
+        <operation name="editCategory">
+            <input message="tns:editCategory"/>
+            <output message="tns:editCategoryResponse"/>
+        </operation>
+        <operation name="addNewSale">
+            <input message="tns:addNewSale"/>
+            <output message="tns:addNewSaleResponse"/>
+        </operation>
+        <operation name="editSale">
+            <input message="tns:editSale"/>
+            <output message="tns:editSaleResponse"/>
+        </operation>
+        <operation name="getSalesStatistic">
+            <input message="tns:getSalesStatistic"/>
+            <output message="tns:getSalesStatisticResponse"/>
+        </operation>
+    </portType>
+    <binding name="ServiceStyleRPCImplPortBinding" type="tns:ServiceStyleRPCImpl">
+        <operation name="getAllShops">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getAllCategories">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getAllSales">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getAllUsers">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getAllGoods">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="removeUser">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="removeGood">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="removeCategory">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="removeShop">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="removeSale">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="addNewUser">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="addNewCategory">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="addNewGood">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="addNewShop">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editUser">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editShop">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editGood">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editCategory">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="addNewSale">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="editSale">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getSalesStatistic">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="ServiceStyleRPC">
+        <port name="ServiceStyleRPCImplPort" binding="tns:ServiceStyleRPCImplPortBinding"/>
+    </service>
+</definitions>

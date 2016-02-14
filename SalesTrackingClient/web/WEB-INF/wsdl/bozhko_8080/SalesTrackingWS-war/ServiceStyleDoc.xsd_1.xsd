@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.vechorko.bsuir.by/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.vechorko.bsuir.by/">
+
+<xs:element name="addNewCategory" type="tns:addNewCategory"/>
+
+<xs:element name="addNewCategoryResponse" type="tns:addNewCategoryResponse"/>
+
+<xs:element name="addNewGood" type="tns:addNewGood"/>
+
+<xs:element name="addNewGoodResponse" type="tns:addNewGoodResponse"/>
+
+<xs:element name="addNewSale" type="tns:addNewSale"/>
+
+<xs:element name="addNewSaleResponse" type="tns:addNewSaleResponse"/>
+
+<xs:element name="addNewShop" type="tns:addNewShop"/>
+
+<xs:element name="addNewShopResponse" type="tns:addNewShopResponse"/>
+
+<xs:element name="addNewUser" type="tns:addNewUser"/>
+
+<xs:element name="addNewUserResponse" type="tns:addNewUserResponse"/>
+
+<xs:element name="getAllCategories" type="tns:getAllCategories"/>
+
+<xs:element name="getAllCategoriesResponse" type="tns:getAllCategoriesResponse"/>
+
+<xs:element name="getAllGoods" type="tns:getAllGoods"/>
+
+<xs:element name="getAllGoodsResponse" type="tns:getAllGoodsResponse"/>
+
+<xs:element name="getAllSales" type="tns:getAllSales"/>
+
+<xs:element name="getAllSalesResponse" type="tns:getAllSalesResponse"/>
+
+<xs:element name="getAllShops" type="tns:getAllShops"/>
+
+<xs:element name="getAllShopsResponse" type="tns:getAllShopsResponse"/>
+
+<xs:element name="getAllUsers" type="tns:getAllUsers"/>
+
+<xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse"/>
+
+<xs:element name="getCategory" type="tns:getCategory"/>
+
+<xs:element name="getCategoryResponse" type="tns:getCategoryResponse"/>
+
+<xs:element name="getGood" type="tns:getGood"/>
+
+<xs:element name="getGoodResponse" type="tns:getGoodResponse"/>
+
+<xs:element name="getSale" type="tns:getSale"/>
+
+<xs:element name="getSaleResponse" type="tns:getSaleResponse"/>
+
+<xs:element name="getSalesStatistic" type="tns:getSalesStatistic"/>
+
+<xs:element name="getSalesStatisticResponse" type="tns:getSalesStatisticResponse"/>
+
+<xs:element name="getShop" type="tns:getShop"/>
+
+<xs:element name="getShopResponse" type="tns:getShopResponse"/>
+
+<xs:element name="getUser" type="tns:getUser"/>
+
+<xs:element name="getUserResponse" type="tns:getUserResponse"/>
+
+<xs:complexType name="getAllUsers">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllUsersResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCategories">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllCategoriesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllGoods">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllGoodsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSalesStatistic">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSalesStatisticResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGood">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGoodResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllShops">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllShopsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewShop">
+<xs:sequence>
+<xs:element name="shop" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewShopResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getShop">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getShopResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUser">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllSales">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllSalesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUser">
+<xs:sequence>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSale">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSaleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewSale">
+<xs:sequence>
+<xs:element name="sale" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewSaleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewGood">
+<xs:sequence>
+<xs:element name="good" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewGoodResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategory">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCategory">
+<xs:sequence>
+<xs:element name="category" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

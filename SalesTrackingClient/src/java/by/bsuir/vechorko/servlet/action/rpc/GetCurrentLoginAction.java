@@ -1,0 +1,19 @@
+package by.bsuir.vechorko.servlet.action.rpc;
+
+import by.bsuir.vechorko.servlet.action.Action;
+import java.io.PrintWriter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GetCurrentLoginAction implements Action {
+
+    @Override
+    public void execute(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            PrintWriter writer = response.getWriter();
+            if(writer != null) {
+                writer.write((String) request.getSession().getAttribute("login"));
+            }
+        } catch (Exception e) {}
+    }    
+}
